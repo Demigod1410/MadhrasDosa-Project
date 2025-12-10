@@ -1,0 +1,243 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+}
+
+const buttonContainerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.4,
+      staggerChildren: 0.2
+    }
+  }
+}
+
+const buttonVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: 20,
+    scale: 0.9
+  },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+}
+
+export default function CTA() {
+  return (
+    <section 
+      className="relative py-24 md:py-32 px-4 overflow-hidden"
+      style={{
+        background: 'linear-gradient(180deg, #FFFFFF 0%, #FFFCF5 50%, #FFF9EB 100%)'
+      }}
+    >
+      {/* Decorative Elements */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 blur-3xl pointer-events-none"
+        style={{ background: '#febd01' }}
+      />
+
+      {/* Accent Lines */}
+      <motion.div
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute top-0 left-0 right-0 h-1 origin-left"
+        style={{ background: 'linear-gradient(90deg, transparent 0%, #febd01 50%, transparent 100%)' }}
+      />
+
+      <div className="max-w-5xl mx-auto relative z-10 text-center">
+        {/* Main Heading */}
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {/* Decorative Top Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-block mb-8"
+          >
+            <div className="flex items-center gap-3">
+              <div className="h-px w-12 bg-[#febd01]" />
+              <span 
+                className="text-sm font-semibold tracking-wider uppercase"
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  color: '#1A1A1A'
+                }}
+              >
+                Ready to Order?
+              </span>
+              <div className="h-px w-12 bg-[#febd01]" />
+            </div>
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            style={{
+              fontFamily: 'var(--font-baloo)',
+              fontSize: 'clamp(2.5rem, 7vw, 5rem)',
+              lineHeight: '1.1',
+              color: '#1A1A1A',
+              fontWeight: '800'
+            }}
+            className="mb-6"
+          >
+            Your South Indian Feast
+            <br />
+            <span style={{ color: '#febd01' }}>is Waiting</span>
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
+              lineHeight: '1.6',
+              color: '#4A4A4A'
+            }}
+            className="max-w-2xl mx-auto mb-12"
+          >
+            Experience authentic flavors that bring you closer to home. 
+            Order now or book our catering for your next event.
+          </motion.p>
+        </motion.div>
+
+        {/* CTA Buttons */}
+        <motion.div
+          variants={buttonContainerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-5 justify-center items-center"
+        >
+          <motion.button
+            variants={buttonVariants}
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+            className="group w-full sm:w-auto px-10 py-5 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
+            style={{
+              fontFamily: 'var(--font-baloo)',
+              fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
+              fontWeight: '700',
+              backgroundColor: '#febd01',
+              color: '#1A1A1A'
+            }}
+          >
+            <span className="flex items-center justify-center gap-3">
+              Order Online
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="text-2xl"
+              >
+                →
+              </motion.span>
+            </span>
+          </motion.button>
+
+          <motion.button
+            variants={buttonVariants}
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+            className="group w-full sm:w-auto px-10 py-5 rounded-full transition-all duration-300 border-2"
+            style={{
+              fontFamily: 'var(--font-baloo)',
+              fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
+              fontWeight: '700',
+              borderColor: '#febd01',
+              color: '#febd01',
+              backgroundColor: 'transparent'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#febd01'
+              e.currentTarget.style.color = '#1A1A1A'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent'
+              e.currentTarget.style.color = '#febd01'
+            }}
+          >
+            Book Catering
+          </motion.button>
+        </motion.div>
+
+        {/* Trust Indicators */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-16 flex flex-wrap items-center justify-center gap-8 md:gap-12"
+        >
+          {[
+            { icon: "⭐", text: "4.6 Rating" },
+            { icon: "🚚", text: "Fast Delivery" },
+            { icon: "🌿", text: "Fresh Ingredients" },
+            { icon: "❤️", text: "50K+ Happy Guests" }
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
+              className="flex items-center gap-2"
+            >
+              <span className="text-2xl">{item.icon}</span>
+              <span 
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
+                  color: '#6B7280',
+                  fontWeight: '500'
+                }}
+              >
+                {item.text}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Bottom Decorative Wave */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-2 opacity-30"
+        style={{
+          background: 'repeating-linear-gradient(90deg, #febd01 0px, #febd01 20px, transparent 20px, transparent 40px)'
+        }}
+      />
+    </section>
+  )
+}
