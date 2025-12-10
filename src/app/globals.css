@@ -6,21 +6,66 @@
 }
 
 @theme inline {
+  /* Color Palette */
+  --color-primary-orange: #FF4500;
+  --color-primary-red: #E94B3C;
+  --color-primary-maroon: #8B0000;
+  --color-secondary-gold: #FFD700;
+  --color-secondary-amber: #FFA500;
+  --color-neutral-cream: #FFF8DC;
+  --color-neutral-offwhite: #FFFAF0;
+  --color-neutral-beige: #F5E6D3;
+  --color-neutral-brown: #2C1810;
+  --color-neutral-darkGray: #1A1A1A;
+  
+  /* Font Families */
+  --font-display: var(--font-bebas);
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
+  --font-accent: var(--font-playfair);
+  
+  /* Font Sizes */
+  --font-size-display-xl: 6rem;
+  --font-size-display-lg: 4.5rem;
+  --font-size-display: 3.5rem;
+  --font-size-hero: 3rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body-xl: 1.25rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-body-sm: 0.875rem;
+  
+  /* Legacy vars */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Accordion Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
 }
