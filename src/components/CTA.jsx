@@ -47,13 +47,13 @@ export default function CTA() {
     <section 
       className="relative py-24 md:py-32 px-4 overflow-hidden"
       style={{
-        background: 'linear-gradient(180deg, #FFFFFF 0%, #FFFCF5 50%, #FFF9EB 100%)'
+        background: 'linear-gradient(180deg, #fec314 0%, #ffd54f 50%, #fec314 100%)'
       }}
     >
       {/* Decorative Elements */}
       <div 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: '#febd01' }}
+        style={{ background: '#ffd54f' }}
       />
 
       {/* Accent Lines */}
@@ -63,7 +63,7 @@ export default function CTA() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="absolute top-0 left-0 right-0 h-1 origin-left"
-        style={{ background: 'linear-gradient(90deg, transparent 0%, #febd01 50%, transparent 100%)' }}
+        style={{ background: 'linear-gradient(90deg, transparent 0%, #FFFFFF 50%, transparent 100%)' }}
       />
 
       <div className="max-w-5xl mx-auto relative z-10 text-center">
@@ -83,17 +83,18 @@ export default function CTA() {
             className="inline-block mb-8"
           >
             <div className="flex items-center gap-3">
-              <div className="h-px w-12 bg-[#febd01]" />
+              <div className="h-px w-12 bg-white" />
               <span 
                 className="text-sm font-semibold tracking-wider uppercase"
                 style={{
                   fontFamily: 'var(--font-body)',
-                  color: '#1A1A1A'
+                  color: '#FFFFFF',
+                  textShadow: '0 1px 2px rgba(0,0,0,0.2)'
                 }}
               >
                 Ready to Order?
               </span>
-              <div className="h-px w-12 bg-[#febd01]" />
+              <div className="h-px w-12 bg-white" />
             </div>
           </motion.div>
 
@@ -113,7 +114,7 @@ export default function CTA() {
           >
             Your South Indian Feast
             <br />
-            <span style={{ color: '#febd01' }}>is Waiting</span>
+            <span style={{ color: '#FFFFFF', textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>is Waiting</span>
           </motion.h2>
 
           <motion.p
@@ -125,7 +126,8 @@ export default function CTA() {
               fontFamily: 'var(--font-body)',
               fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
               lineHeight: '1.6',
-              color: '#4A4A4A'
+              color: '#2C1810',
+              textShadow: '0 1px 2px rgba(255,255,255,0.3)'
             }}
             className="max-w-2xl mx-auto mb-12"
           >
@@ -151,7 +153,7 @@ export default function CTA() {
               fontFamily: 'var(--font-baloo)',
               fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
               fontWeight: '700',
-              backgroundColor: '#febd01',
+              backgroundColor: '#FFFFFF',
               color: '#1A1A1A'
             }}
           >
@@ -176,17 +178,20 @@ export default function CTA() {
               fontFamily: 'var(--font-baloo)',
               fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
               fontWeight: '700',
-              borderColor: '#febd01',
-              color: '#febd01',
-              backgroundColor: 'transparent'
+              borderColor: '#FFFFFF',
+              color: '#FFFFFF',
+              backgroundColor: 'transparent',
+              textShadow: '0 1px 2px rgba(0,0,0,0.2)'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#febd01'
+              e.currentTarget.style.backgroundColor = '#FFFFFF'
               e.currentTarget.style.color = '#1A1A1A'
+              e.currentTarget.style.textShadow = 'none'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = 'transparent'
-              e.currentTarget.style.color = '#febd01'
+              e.currentTarget.style.color = '#FFFFFF'
+              e.currentTarget.style.textShadow = '0 1px 2px rgba(0,0,0,0.2)'
             }}
           >
             Book Catering
@@ -202,10 +207,10 @@ export default function CTA() {
           className="mt-16 flex flex-wrap items-center justify-center gap-8 md:gap-12"
         >
           {[
-            { icon: "⭐", text: "4.6 Rating" },
-            { icon: "🚚", text: "Fast Delivery" },
-            { icon: "🌿", text: "Fresh Ingredients" },
-            { icon: "❤️", text: "50K+ Happy Guests" }
+            { text: "4.6 Rating" },
+            { text: "Fast Delivery" },
+            { text: "Fresh Ingredients" },
+            { text: "50K+ Happy Guests" }
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -215,13 +220,13 @@ export default function CTA() {
               transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
               className="flex items-center gap-2"
             >
-              <span className="text-2xl">{item.icon}</span>
               <span 
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
-                  color: '#6B7280',
-                  fontWeight: '500'
+                  color: '#1A1A1A',
+                  fontWeight: '600',
+                  textShadow: '0 1px 2px rgba(255,255,255,0.3)'
                 }}
               >
                 {item.text}
@@ -235,7 +240,7 @@ export default function CTA() {
       <div 
         className="absolute bottom-0 left-0 right-0 h-2 opacity-30"
         style={{
-          background: 'repeating-linear-gradient(90deg, #febd01 0px, #febd01 20px, transparent 20px, transparent 40px)'
+          background: 'repeating-linear-gradient(90deg, #FFFFFF 0px, #FFFFFF 20px, transparent 20px, transparent 40px)'
         }}
       />
     </section>

@@ -48,8 +48,8 @@ export default function MenuPage() {
       </section>
 
       {/* Static Menu Section */}
-      <section id="menu" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section id="menu" className="py-20">
+        <div className="w-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -72,43 +72,29 @@ export default function MenuPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-lg p-8 border-2 border-[#febd01]/20"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-[#febd01]/20"
           >
-            <div className="flex flex-col items-center justify-center min-h-[600px] space-y-6">
-              <div className="w-24 h-24 bg-[#febd01] rounded-full flex items-center justify-center">
-                <svg 
-                  className="w-12 h-12 text-white" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
-                  />
-                </svg>
-              </div>
-              
-              <h3 className="font-baloo text-3xl font-bold text-[#1A1A1A]">
-                Menu Content Goes Here
-              </h3>
-              
-              <p className="font-poppins text-lg text-[#2D2D2D] text-center max-w-2xl">
-                You can add your menu image, PDF viewer, or structured menu items here. 
-                This placeholder shows where your static menu content will be displayed.
-              </p>
-              
-              <div className="pt-6">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
-                >
-                  Order Online
-                </motion.button>
-              </div>
+            <div className="relative w-full transform scale-100 origin-top">
+              <Image
+                src="/menu.png"
+                alt="Madhras Dosa Menu"
+                width={10000}
+                height={13000}
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="p-8 text-center">
+              <motion.a
+                href="/MD Dine in Menu (Revised).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+              >
+                View Menu
+              </motion.a>
             </div>
           </motion.div>
         </div>
