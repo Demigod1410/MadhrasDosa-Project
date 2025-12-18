@@ -175,7 +175,7 @@ export default function FAQ() {
                   className="bg-white rounded-2xl border-none shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
                 >
                   <AccordionTrigger 
-                    className="px-6 py-5 text-left hover:no-underline group"
+                    className="px-6 py-5 text-left no-underline hover:no-underline group"
                     style={{
                       fontFamily: 'var(--font-baloo)',
                       fontSize: 'clamp(1.125rem, 2vw, 1.25rem)',
@@ -222,7 +222,7 @@ export default function FAQ() {
             Can't find what you're looking for?{' '}
             <a 
               href="#contact" 
-              className="font-semibold hover:underline transition-colors duration-300"
+              className="font-semibold transition-colors duration-300"
               style={{ color: '#febd01' }}
             >
               Contact our team →

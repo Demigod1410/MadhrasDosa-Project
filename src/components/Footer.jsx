@@ -217,7 +217,7 @@ export default function Footer() {
             </Link>
             
             <a
-              href="https://maps.google.com/?q=76+Old+Dumbarton+Road,+Glasgow+G3+8RE"
+              href="https://maps.app.goo.gl/6xkg5GQLaRpBPDe1A"
               target="_blank"
               rel="noopener noreferrer"
             >
