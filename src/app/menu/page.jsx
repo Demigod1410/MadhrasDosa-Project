@@ -76,7 +76,7 @@ export default function MenuPage() {
           >
             <div className="relative w-full transform scale-100 origin-top">
               <Image
-                src="/menu.png"
+                src="/Menu.png"
                 alt="Madhras Dosa Menu"
                 width={10000}
                 height={13000}
