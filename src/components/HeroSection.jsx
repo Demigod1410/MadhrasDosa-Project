@@ -200,7 +200,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 + (index * 0.1) }}
-                className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300 group"
+                className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-[#febd01]/20 hover:border-[#febd01]/40 transition-all duration-300 group"
                 style={{
                   boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
                 }}

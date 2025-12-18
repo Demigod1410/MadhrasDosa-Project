@@ -98,17 +98,17 @@ export default function Testimonials() {
     <section 
       className="relative py-20 md:py-28 px-4 overflow-hidden"
       style={{
-        background: 'linear-gradient(180deg, #FFFFFF 0%, #FFFCF5 50%, #FFFFFF 100%)'
+        background: 'linear-gradient(180deg, #fec314 0%, #ffd54f 50%, #fec314 100%)'
       }}
     >
       {/* Decorative Elements */}
       <div 
         className="absolute top-20 left-0 w-96 h-96 rounded-full opacity-15 blur-3xl pointer-events-none"
-        style={{ background: '#febd01' }}
+        style={{ background: '#fec314' }}
       />
       <div 
         className="absolute bottom-20 right-0 w-80 h-80 rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: '#febd01' }}
+        style={{ background: '#fec314' }}
       />
 
       {/* Accent Line */}
@@ -118,7 +118,7 @@ export default function Testimonials() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="absolute top-0 left-0 right-0 h-1 origin-left"
-        style={{ background: 'linear-gradient(90deg, transparent 0%, #febd01 50%, transparent 100%)' }}
+        style={{ background: 'linear-gradient(90deg, transparent 0%, #fec314 50%, transparent 100%)' }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -142,8 +142,9 @@ export default function Testimonials() {
               className="px-6 py-2 rounded-full text-sm font-semibold tracking-wider uppercase"
               style={{
                 fontFamily: 'var(--font-body)',
-                backgroundColor: '#febd01',
-                color: '#1A1A1A'
+                backgroundColor: '#FFFFFF',
+                color: '#1A1A1A',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}
             >
               Testimonials
@@ -188,22 +189,24 @@ export default function Testimonials() {
               style={{
                 fontFamily: 'var(--font-baloo)',
                 fontSize: 'clamp(2rem, 3vw, 2.5rem)',
-                color: '#febd01',
-                fontWeight: '700'
+                color: '#FFFFFF',
+                fontWeight: '700',
+                textShadow: '0 2px 4px rgba(0,0,0,0.2)'
               }}
             >
               4.6
             </span>
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-2xl" style={{ color: '#febd01' }}>★</span>
+                <span key={i} className="text-2xl" style={{ color: '#FFFFFF', textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>★</span>
               ))}
             </div>
             <span 
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
-                color: '#6B7280'
+                color: '#f5f5f7',
+                textShadow: '0 1px 2px rgba(0,0,0,0.2)'
               }}
             >
               (1000+ Reviews)
@@ -229,7 +232,7 @@ export default function Testimonials() {
               {/* Quote Icon */}
               <div 
                 className="absolute top-6 right-6 text-6xl opacity-10 pointer-events-none"
-                style={{ color: '#febd01' }}
+                style={{ color: '#fec314' }}
               >
                 "
               </div>
@@ -244,7 +247,7 @@ export default function Testimonials() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: 0.5 + (i * 0.1) }}
                     className="text-xl" 
-                    style={{ color: '#febd01' }}
+                    style={{ color: '#fec314' }}
                   >
                     ★
                   </motion.span>
@@ -270,9 +273,10 @@ export default function Testimonials() {
                 <div 
                   className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold"
                   style={{
-                    backgroundColor: '#febd01',
+                    backgroundColor: '#FFFFFF',
                     color: '#1A1A1A',
-                    fontFamily: 'var(--font-baloo)'
+                    fontFamily: 'var(--font-baloo)',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
                   }}
                 >
                   {testimonial.name.charAt(0)}
@@ -310,7 +314,7 @@ export default function Testimonials() {
                 transition={{ duration: 0.5, delay: 0.6 + (index * 0.1) }}
                 className="mt-4 h-1 rounded-full origin-left"
                 style={{ 
-                  backgroundColor: '#febd01',
+                  backgroundColor: '#fec314',
                   width: '60px'
                 }}
               />
@@ -323,7 +327,8 @@ export default function Testimonials() {
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
             className="group relative rounded-3xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center text-center cursor-pointer"
             style={{
-              background: 'linear-gradient(135deg, #febd01 0%, #ffd54f 100%)'
+              background: '#FFFFFF',
+              border: '2px solid #fec314'
             }}
           >
             <motion.div
@@ -379,7 +384,7 @@ export default function Testimonials() {
       <div 
         className="absolute bottom-0 left-0 right-0 h-2 opacity-30"
         style={{
-          background: 'repeating-linear-gradient(90deg, #febd01 0px, #febd01 20px, transparent 20px, transparent 40px)'
+          background: 'repeating-linear-gradient(90deg, #fec314 0px, #fec314 20px, transparent 20px, transparent 40px)'
         }}
       />
     </section>
