@@ -262,17 +262,23 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Team Photos Placeholder */}
+            {/* Team Photo */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-12 p-8 bg-[#FFF8E7] rounded-2xl border-2 border-dashed border-[#febd01]"
+              className="mt-12 relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-[#febd01]"
             >
-              <p className="font-poppins text-[#2D2D2D]">
-                Team member photos and details coming soon...
-              </p>
+              <div className="relative w-full h-[500px] md:h-[600px]">
+                <Image
+                  src="/staff.jpg"
+                  alt="Madhras Dosa Team"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -296,13 +302,15 @@ export default function AboutPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
-              >
-                Order Online
-              </motion.button>
+              <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+                >
+                  Order Online
+                </motion.button>
+              </a>
               
               <motion.button
                 whileHover={{ scale: 1.05 }}
