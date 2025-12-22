@@ -88,7 +88,7 @@ export default function Navbar() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Link href="/order">
+            <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -96,7 +96,7 @@ export default function Navbar() {
               >
                 Order Now
               </motion.button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -147,11 +147,11 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navLinks.length * 0.1 }}
               >
-                <Link href="/order" onClick={() => setIsOpen(false)}>
+                <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                   <button className="w-full px-6 py-3 bg-[#febd01] text-[#1A1A1A] font-baloo text-base font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300">
                     Order Now
                   </button>
-                </Link>
+                </a>
               </motion.div>
             </div>
           </motion.div>
