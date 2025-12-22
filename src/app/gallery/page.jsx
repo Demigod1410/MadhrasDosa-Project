@@ -123,62 +123,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Instagram Feed Section */}
-      <section id="instagram" className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="text-center"
-          >
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Instagram className="w-12 h-12 text-[#febd01]" />
-              <h2 className="font-baloo text-4xl md:text-5xl font-bold text-[#1A1A1A]">
-                Follow Us on Instagram
-              </h2>
-            </div>
-            
-            <p className="font-poppins text-lg md:text-xl text-[#2D2D2D] max-w-3xl mx-auto mb-10">
-              Stay connected with daily updates, behind-the-scenes moments, and mouth-watering food photography.
-            </p>
-
-            {/* Instagram Feed Placeholder */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-[#FFF8E7] rounded-2xl border-2 border-dashed border-[#febd01] p-12"
-            >
-              <div className="flex flex-col items-center justify-center space-y-6">
-                <div className="w-24 h-24 bg-[#febd01] rounded-full flex items-center justify-center">
-                  <Instagram className="w-12 h-12 text-white" />
-                </div>
-                
-                <h3 className="font-baloo text-3xl font-bold text-[#1A1A1A]">
-                  Instagram Feed
-                </h3>
-                
-                <p className="font-poppins text-lg text-[#2D2D2D] text-center max-w-2xl">
-                  Instagram feed can be embedded here (optional)
-                </p>
-                
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
-                >
-                  <Instagram className="w-5 h-5" />
-                  Visit Our Instagram
-                </motion.button>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 px-6 bg-[#1A1A1A]">
         <div className="max-w-4xl mx-auto text-center">
@@ -197,14 +141,16 @@ export default function GalleryPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center justify-center gap-3"
-              >
-                <Instagram className="w-5 h-5" />
-                Follow @MadhrasDosa
-              </motion.button>
+              <a href="https://www.instagram.com/madhrasdosa?igsh=bGlyZXo1MGhjYXRv" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center justify-center gap-3"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Follow @MadhrasDosa
+                </motion.button>
+              </a>
               
               <motion.button
                 whileHover={{ scale: 1.05 }}
