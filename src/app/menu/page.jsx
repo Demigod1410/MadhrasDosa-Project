@@ -37,13 +37,15 @@ export default function MenuPage() {
             Authentic South Indian flavours, crafted with care
           </p>
           
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
-          >
-            Order Online
-          </motion.button>
+          <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+            >
+              Order Online
+            </motion.button>
+          </a>
         </motion.div>
       </section>
 
@@ -86,7 +88,7 @@ export default function MenuPage() {
             
             <div className="p-8 text-center">
               <motion.a
-                href="/MD Dine in Menu (Revised).pdf"
+                href="/MD_Menu.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -118,13 +120,15 @@ export default function MenuPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
-              >
-                Order on Uber Eats
-              </motion.button>
+              <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+                >
+                  Order on Uber Eats
+                </motion.button>
+              </a>
               
               <motion.button
                 whileHover={{ scale: 1.05 }}
