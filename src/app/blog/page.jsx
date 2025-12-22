@@ -206,21 +206,25 @@ export default function BlogPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
-              >
-                Order Online
-              </motion.button>
+              <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+                >
+                  Order Online
+                </motion.button>
+              </a>
               
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
-              >
-                Visit Us
-              </motion.button>
+              <a href="https://www.instagram.com/madhrasdosa?igsh=bGlyZXo1MGhjYXRv" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
+                >
+                  Visit Us
+                </motion.button>
+              </a>
             </div>
           </motion.div>
         </div>
