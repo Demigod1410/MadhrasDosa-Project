@@ -148,20 +148,22 @@ export default function HeroSection() {
           animate="visible"
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.button
-            variants={buttonVariants}
-            whileHover="hover"
-            whileTap="tap"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              backgroundColor: '#febd01',
-              color: '#1A1A1A'
-            }}
-            className="w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow focus:ring-2 focus:ring-offset-2"
-            aria-label="Order food online"
-          >
-            Order Online
-          </motion.button>
+          <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
+              style={{
+                fontFamily: 'var(--font-heading)',
+                backgroundColor: '#febd01',
+                color: '#1A1A1A'
+              }}
+              className="w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow focus:ring-2 focus:ring-offset-2"
+              aria-label="Order food online"
+            >
+              Order Online
+            </motion.button>
+          </a>
           
           <motion.button
             variants={buttonVariants}
