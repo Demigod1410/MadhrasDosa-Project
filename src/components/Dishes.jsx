@@ -291,27 +291,29 @@ export default function Dishes() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group inline-flex items-center gap-3 px-10 py-5 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
-            style={{
-              fontFamily: 'var(--font-baloo)',
-              fontSize: 'clamp(1.125rem, 2vw, 1.25rem)',
-              fontWeight: '700',
-              backgroundColor: '#febd01',
-              color: '#1A1A1A'
-            }}
-          >
-            Order Now
-            <motion.span
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              className="text-2xl"
+          <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group inline-flex items-center gap-3 px-10 py-5 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
+              style={{
+                fontFamily: 'var(--font-baloo)',
+                fontSize: 'clamp(1.125rem, 2vw, 1.25rem)',
+                fontWeight: '700',
+                backgroundColor: '#febd01',
+                color: '#1A1A1A'
+              }}
             >
-              →
-            </motion.span>
-          </motion.button>
+              Order Now
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="text-2xl"
+              >
+                →
+              </motion.span>
+            </motion.button>
+          </a>
         </motion.div>
       </div>
 
