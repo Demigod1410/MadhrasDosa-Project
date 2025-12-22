@@ -47,7 +47,7 @@ export default function Footer() {
         </svg>
       )
     },
-    { name: "Instagram", href: "https://www.instagram.com/madhrasdosa", icon: <Instagram className="w-5 h-5" /> },
+    { name: "Instagram", href: "https://www.instagram.com/madhrasdosa?igsh=bGlyZXo1MGhjYXRv", icon: <Instagram className="w-5 h-5" /> },
     { name: "Facebook", href: "https://www.facebook.com/madhrasdosa", icon: <Facebook className="w-5 h-5" /> },
     { name: "YouTube", href: "https://www.youtube.com/@madhrasdosa", icon: <Youtube className="w-5 h-5" /> }
   ];
@@ -206,7 +206,11 @@ export default function Footer() {
               </motion.button>
             </a>
             
-            <Link href="/order">
+            <a
+              href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -214,7 +218,7 @@ export default function Footer() {
               >
                 Order Online
               </motion.button>
-            </Link>
+            </a>
             
             <a
               href="https://maps.app.goo.gl/6xkg5GQLaRpBPDe1A"
