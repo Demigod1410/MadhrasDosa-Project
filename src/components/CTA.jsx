@@ -144,30 +144,32 @@ export default function CTA() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-5 justify-center items-center"
         >
-          <motion.button
-            variants={buttonVariants}
-            whileHover={{ scale: 1.05, y: -5 }}
-            whileTap={{ scale: 0.95 }}
-            className="group w-full sm:w-auto px-10 py-5 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
-            style={{
-              fontFamily: 'var(--font-baloo)',
-              fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
-              fontWeight: '700',
-              backgroundColor: '#FFFFFF',
-              color: '#1A1A1A'
-            }}
-          >
-            <span className="flex items-center justify-center gap-3">
-              Order Online
-              <motion.span
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                className="text-2xl"
-              >
-                →
-              </motion.span>
-            </span>
-          </motion.button>
+          <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              variants={buttonVariants}
+              whileHover={{ scale: 1.05, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group w-full sm:w-auto px-10 py-5 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
+              style={{
+                fontFamily: 'var(--font-baloo)',
+                fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
+                fontWeight: '700',
+                backgroundColor: '#FFFFFF',
+                color: '#1A1A1A'
+              }}
+            >
+              <span className="flex items-center justify-center gap-3">
+                Order Online
+                <motion.span
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  className="text-2xl"
+                >
+                  →
+                </motion.span>
+              </span>
+            </motion.button>
+          </a>
 
           <motion.button
             variants={buttonVariants}
