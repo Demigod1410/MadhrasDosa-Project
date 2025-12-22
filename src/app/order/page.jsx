@@ -76,26 +76,28 @@ export default function OrderOnlinePage() {
             We've partnered with Uber Eats so you can enjoy the Madhras Dosa experience from the comfort of your home.
           </p>
           
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
-          >
-            Order Now on Uber Eats
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
+          <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
             >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2.5} 
-                d="M17 8l4 4m0 0l-4 4m4-4H3" 
-              />
-            </svg>
-          </motion.button>
+              Order Now on Uber Eats
+              <svg 
+                className="w-6 h-6" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2.5} 
+                  d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                />
+              </svg>
+            </motion.button>
+          </a>
         </motion.div>
       </section>
 
@@ -240,26 +242,28 @@ export default function OrderOnlinePage() {
               Your favourite dosas, idlis, and curries are just a tap away.
             </p>
             
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
-            >
-              Order Now on Uber Eats
-              <svg 
-                className="w-6 h-6" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+            <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2.5} 
-                  d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                />
-              </svg>
-            </motion.button>
+                Order Now on Uber Eats
+                <svg 
+                  className="w-6 h-6" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2.5} 
+                    d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                  />
+                  </svg>
+              </motion.button>
+            </a>
 
             {/* Trust Indicators */}
             <div className="mt-12 flex flex-wrap justify-center gap-8 text-white/80 font-poppins">
