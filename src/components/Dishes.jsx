@@ -60,7 +60,7 @@ const dishes = [
     id: 1,
     name: "Ghee Roast Dosa",
     description: "Buttery, crispy perfection with aromatic ghee",
-    image: "/GR-Dosa.webp",
+    image: "/GR-Dosa.jpg",
     badge: "Signature"
   },
   {
