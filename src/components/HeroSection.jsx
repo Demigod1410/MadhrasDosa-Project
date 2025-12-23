@@ -104,7 +104,7 @@ export default function HeroSection() {
         }}
       />
       
-      <div className="max-w-7xl mx-auto text-center z-10 relative">
+      <div className="max-w-7xl mx-auto text-center z-10 relative pt-12 md:pt-0">
         <motion.h1 
           variants={headlineVariants}
           initial="hidden"
@@ -188,7 +188,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-16 md:mt-20"
+          className="mt-16 md:mt-20 pb-12 md:pb-0"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
             {[
