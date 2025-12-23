@@ -20,7 +20,7 @@ export default function Menu() {
           className="text-center mb-16"
         >
           <h2 className="font-baloo text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-6">
-            Static Menu
+            Menu
           </h2>
           <p className="font-poppins text-lg text-[#2D2D2D]">
             Browse our full menu below
