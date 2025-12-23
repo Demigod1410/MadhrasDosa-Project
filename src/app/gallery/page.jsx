@@ -22,14 +22,14 @@ const staggerContainer = {
 export default function GalleryPage() {
   // Sample gallery images - using existing images from public folder
   const galleryImages = [
-    { src: "/GR-Dosa.webp", alt: "Ghee Roast Dosa" },
+    { src: "/GR-Dosa.jpg", alt: "Ghee Roast Dosa" },
     { src: "/CC.jpg", alt: "Chettinad Curry" },
     { src: "/m-dosa.jpg", alt: "Masala Dosa" },
     { src: "/idli.jpg", alt: "Idli Sambar" },
     { src: "/P-Dosa.png", alt: "Paneer Dosa" },
     { src: "/uttapam.png", alt: "Uttapam" },
     { src: "/dosa.jpg", alt: "Traditional Dosa" },
-    { src: "/GR-Dosa.webp", alt: "Restaurant Interior" },
+    { src: "/GR-Dosa.jpg", alt: "Restaurant Interior" },
   ];
 
   return (
