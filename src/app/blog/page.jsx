@@ -22,7 +22,7 @@ const staggerContainer = {
 export default function BlogPage() {
   const featuredPosts = [
     {
-      image: "/GR-Dosa.webp",
+      image: "/GR-Dosa.jpg",
       category: "Recipes",
       title: "The Perfect Chutney Combo: A Complete Guide",
       excerpt: "Discover the art of pairing chutneys with your favourite dosas. From coconut to tomato, learn which combinations bring out the best flavours.",
