@@ -272,7 +272,7 @@ export default function AboutPage() {
             >
               <div className="relative w-full h-[500px] md:h-[600px]">
                 <Image
-                  src="/staff.jpg"
+                  src="/Staff1.jpg"
                   alt="Madhras Dosa Team"
                   fill
                   className="object-cover"
