@@ -46,7 +46,7 @@ export default function OrderOnlinePage() {
   return (
     <main className="min-h-screen bg-[#FFF8E7]">
       {/* Hero Section */}
-      <section id="hero" className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <Image
             src="/dosa.jpg"
@@ -82,7 +82,7 @@ export default function OrderOnlinePage() {
               whileTap={{ scale: 0.95 }}
               className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
             >
-              Order Now on Uber Eats
+              Order Online
               <svg 
                 className="w-6 h-6" 
                 fill="none" 

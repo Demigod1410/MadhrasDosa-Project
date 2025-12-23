@@ -270,15 +270,14 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-12 relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-[#febd01]"
             >
-              <div className="relative w-full h-[500px] md:h-[600px]">
-                <Image
-                  src="/Staff1.jpg"
-                  alt="Madhras Dosa Team"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                />
-              </div>
+              <Image
+                src="/Staff1.jpg"
+                alt="Madhras Dosa Team"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 1200px"
+              />
             </motion.div>
           </motion.div>
         </div>

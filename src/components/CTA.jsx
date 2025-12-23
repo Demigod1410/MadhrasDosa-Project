@@ -206,34 +206,47 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 md:gap-12"
+          className="mt-16 flex flex-wrap items-center justify-center gap-6 md:gap-8"
         >
           {[
             { text: "4.6 Rating" },
             { text: "Fast Delivery" },
             { text: "Fresh Ingredients" },
             { text: "50K+ Happy Guests" }
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
-              className="flex items-center gap-2"
-            >
-              <span 
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
-                  color: '#1A1A1A',
-                  fontWeight: '600',
-                  textShadow: '0 1px 2px rgba(255,255,255,0.3)'
-                }}
+          ].map((item, index, array) => (
+            <>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
+                className="flex items-center gap-2"
               >
-                {item.text}
-              </span>
-            </motion.div>
+                <span 
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 'clamp(1rem, 1.8vw, 1.125rem)',
+                    color: '#1A1A1A',
+                    fontWeight: '600',
+                    textShadow: '0 1px 2px rgba(255,255,255,0.3)'
+                  }}
+                >
+                  {item.text}
+                </span>
+              </motion.div>
+              {index < array.length - 1 && (
+                <span
+                  style={{
+                    fontSize: 'clamp(1rem, 1.8vw, 1.125rem)',
+                    color: '#1A1A1A',
+                    opacity: '0.5'
+                  }}
+                >
+                  |
+                </span>
+              )}
+            </>
           ))}
         </motion.div>
       </div>

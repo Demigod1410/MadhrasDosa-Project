@@ -363,18 +363,20 @@ export default function Testimonials() {
               Loved our food? Leave us a review on Google!
             </p>
 
-            <motion.span
-              whileHover={{ scale: 1.1 }}
-              className="inline-flex items-center gap-2 font-semibold"
-              style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: 'clamp(0.875rem, 1.3vw, 1rem)',
-                color: '#1A1A1A'
-              }}
-            >
-              Write a Review
-              <span className="text-xl">→</span>
-            </motion.span>
+            <a href="https://share.google/D4hICNaOJxBWe7pxe" target="_blank" rel="noopener noreferrer">
+              <motion.span
+                whileHover={{ scale: 1.1 }}
+                className="inline-flex items-center gap-2 font-semibold"
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 'clamp(0.875rem, 1.3vw, 1rem)',
+                  color: '#1A1A1A'
+                }}
+              >
+                Write a Review
+                <span className="text-xl">→</span>
+              </motion.span>
+            </a>
           </motion.div>
         </motion.div>
 

@@ -13,7 +13,7 @@ export default function Home() {
         <Dishes />
         <Testimonials />
         <FAQ />
-         <Menu />
+        <Menu />
         <CTA />
       </main>
     </div>

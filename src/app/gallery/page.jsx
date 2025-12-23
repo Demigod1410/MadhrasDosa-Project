@@ -65,14 +65,16 @@ export default function GalleryPage() {
             Madhras Dosa isn't just food. It's home served hot.
           </p>
           
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
-          >
-            View Gallery
-            <ArrowRight className="w-6 h-6" />
-          </motion.button>
+          <a href="https://www.instagram.com/madhrasdosa?igsh=bGlyZXo1MGhjYXRv" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
+            >
+              View Gallery
+              <ArrowRight className="w-6 h-6" />
+            </motion.button>
+          </a>
         </motion.div>
       </section>
 
