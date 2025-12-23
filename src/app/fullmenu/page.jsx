@@ -1,4 +1,11 @@
+"use client";
 import Image from 'next/image';
+import { motion } from "framer-motion";
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function FullMenu() {
   const menuImages = [
@@ -16,26 +23,60 @@ export default function FullMenu() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#febd02' }}>
-      <div className="max-w-5xl mx-auto py-8 px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Full Menu
-        </h1>
-        
-        <div className="space-y-6">
-          {menuImages.map((menu) => (
-            <div key={menu.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <Image
-                src={menu.src}
-                alt={menu.alt}
-                width={1200}
-                height={1600}
-                className="w-full h-auto"
-                priority={menu.id <= 3}
-              />
-            </div>
-          ))}
+      <main>
+        <div className="max-w-5xl mx-auto py-8 px-4">
+          <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+            Full Menu
+          </h1>
+          
+          <div className="space-y-6">
+            {menuImages.map((menu) => (
+              <div key={menu.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src={menu.src}
+                  alt={menu.alt}
+                  width={1200}
+                  height={1600}
+                  className="w-full h-auto"
+                  priority={menu.id <= 3}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+
+        {/* Quick Order CTA */}
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+            >
+              <h2 className="font-baloo text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-6">
+                Ready to <span className="text-[#febd01]">Order?</span>
+              </h2>
+              
+              <p className="font-poppins text-xl text-[#2D2D2D] mb-10 max-w-2xl mx-auto">
+                Skip the wait and get your favourite dishes delivered straight to your door.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.order.store/store/madhras-dosa/25wGc-j_VOeZBQ3r_KRs6g" target="_blank" rel="noopener noreferrer">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+                  >
+                    Order on Uber Eats
+                  </motion.button>
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }

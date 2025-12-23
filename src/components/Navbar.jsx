@@ -24,7 +24,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/menu", label: "Menu" },
+    { href: "/fullmenu", label: "Menu" },
     { href: "/gallery", label: "Gallery" },
     { href: "/blog", label: "Blog" },
     { href: "/order", label: "Order Online" }
