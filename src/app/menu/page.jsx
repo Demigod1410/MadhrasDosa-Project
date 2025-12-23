@@ -88,9 +88,7 @@ export default function MenuPage() {
             
             <div className="p-8 text-center">
               <motion.a
-                href="/MD_Menu.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/fullmenu"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
