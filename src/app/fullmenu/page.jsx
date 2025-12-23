@@ -22,7 +22,7 @@ export default function FullMenu() {
   ];
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#febd02' }}>
+    <div className="min-h-screen pt-20" style={{ backgroundColor: '#febd02' }}>
       <main>
         <div className="max-w-5xl mx-auto py-8 px-4">
           
