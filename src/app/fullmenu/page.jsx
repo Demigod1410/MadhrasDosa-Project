@@ -69,7 +69,7 @@ export default function FullMenu() {
                     whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
                   >
-                    Order on Uber Eats
+                    Order Online
                   </motion.button>
                 </a>
               </div>
