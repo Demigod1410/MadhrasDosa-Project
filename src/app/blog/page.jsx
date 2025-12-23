@@ -210,17 +210,17 @@ export default function BlogPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
+                  className="w-full sm:w-48 px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300"
                 >
                   Order Online
                 </motion.button>
               </a>
               
-              <a href="https://www.instagram.com/madhrasdosa?igsh=bGlyZXo1MGhjYXRv" target="_blank" rel="noopener noreferrer">
+              <a href="https://maps.app.goo.gl/Fws5pqnpRYC9xQ4d6?g_st=aw" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
+                  className="w-full sm:w-48 px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
                 >
                   Visit Us
                 </motion.button>

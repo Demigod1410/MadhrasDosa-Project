@@ -153,7 +153,7 @@ export default function Dishes() {
                 color: '#1A1A1A'
               }}
             >
-              Our Signature Dishes
+              Our
             </span>
           </motion.div>
 

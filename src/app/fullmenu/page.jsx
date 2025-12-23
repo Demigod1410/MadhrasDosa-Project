@@ -25,9 +25,6 @@ export default function FullMenu() {
     <div className="min-h-screen" style={{ backgroundColor: '#febd02' }}>
       <main>
         <div className="max-w-5xl mx-auto py-8 px-4">
-          <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-            Full Menu
-          </h1>
           
           <div className="space-y-6">
             {menuImages.map((menu) => (

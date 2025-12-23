@@ -128,13 +128,15 @@ export default function MenuPage() {
                 </motion.button>
               </a>
               
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-transparent border-2 border-[#1A1A1A] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#1A1A1A] hover:text-white transition-all duration-300"
-              >
-                Visit Us
-              </motion.button>
+              <a href="https://maps.app.goo.gl/Fws5pqnpRYC9xQ4d6?g_st=aw" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-transparent border-2 border-[#1A1A1A] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#1A1A1A] hover:text-white transition-all duration-300"
+                >
+                  Visit Us
+                </motion.button>
+              </a>
             </div>
           </motion.div>
         </div>
