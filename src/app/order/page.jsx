@@ -248,7 +248,7 @@ export default function OrderOnlinePage() {
                 whileTap={{ scale: 0.95 }}
                 className="px-10 py-5 bg-[#febd01] text-[#1A1A1A] font-baloo text-xl font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center gap-3"
               >
-                Order Now on Uber Eats
+                Order Online 
                 <svg 
                   className="w-6 h-6" 
                   fill="none" 
