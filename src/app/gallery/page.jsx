@@ -147,7 +147,7 @@ export default function GalleryPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center justify-center gap-3"
+                  className="w-full sm:w-64 px-8 py-4 bg-[#febd01] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:bg-[#ffd700] transition-colors duration-300 inline-flex items-center justify-center gap-3"
                 >
                   <Instagram className="w-5 h-5" />
                   Follow @MadhrasDosa
@@ -158,7 +158,7 @@ export default function GalleryPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
+                  className="w-full sm:w-64 px-8 py-4 bg-transparent border-2 border-white text-white font-baloo text-lg font-bold rounded-full hover:bg-white hover:text-[#1A1A1A] transition-all duration-300"
                 >
                   Visit Us
                 </motion.button>
