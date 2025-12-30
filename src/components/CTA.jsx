@@ -214,27 +214,25 @@ export default function CTA() {
             { text: "Fresh Ingredients" },
             { text: "50K+ Happy Guests" }
           ].map((item, index, array) => (
-            <>
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
-                className="flex items-center gap-2"
+            <motion.div
+              key={`trust-${index}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.7 + (index * 0.1) }}
+              className="flex items-center gap-2"
+            >
+              <span 
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 'clamp(1rem, 1.8vw, 1.125rem)',
+                  color: '#1A1A1A',
+                  fontWeight: '600',
+                  textShadow: '0 1px 2px rgba(255,255,255,0.3)'
+                }}
               >
-                <span 
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: 'clamp(1rem, 1.8vw, 1.125rem)',
-                    color: '#1A1A1A',
-                    fontWeight: '600',
-                    textShadow: '0 1px 2px rgba(255,255,255,0.3)'
-                  }}
-                >
-                  {item.text}
-                </span>
-              </motion.div>
+                {item.text}
+              </span>
               {index < array.length - 1 && (
                 <span
                   style={{
@@ -246,7 +244,7 @@ export default function CTA() {
                   |
                 </span>
               )}
-            </>
+            </motion.div>
           ))}
         </motion.div>
       </div>

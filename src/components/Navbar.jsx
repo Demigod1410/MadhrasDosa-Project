@@ -26,8 +26,10 @@ export default function Navbar() {
     { href: "/about", label: "About" },
     { href: "/fullmenu", label: "Menu" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/dosacircle", label: "Dosa Circle" },
     { href: "/blog", label: "Blog" },
-    { href: "/order", label: "Order Online" }
+    { href: "/order", label: "Order Online" },
+    { href: "/contactus", label: "Contact Us" }
   ];
 
   const isActive = (href) => {
