@@ -171,33 +171,35 @@ export default function CTA() {
             </motion.button>
           </a>
 
-          <motion.button
-            variants={buttonVariants}
-            whileHover={{ scale: 1.05, y: -5 }}
-            whileTap={{ scale: 0.95 }}
-            className="group w-full sm:w-auto px-10 py-5 rounded-full transition-all duration-300 border-2"
-            style={{
-              fontFamily: 'var(--font-baloo)',
-              fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
-              fontWeight: '700',
-              borderColor: '#FFFFFF',
-              color: '#FFFFFF',
-              backgroundColor: 'transparent',
-              textShadow: '0 1px 2px rgba(0,0,0,0.2)'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#FFFFFF'
-              e.currentTarget.style.color = '#1A1A1A'
-              e.currentTarget.style.textShadow = 'none'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent'
-              e.currentTarget.style.color = '#FFFFFF'
-              e.currentTarget.style.textShadow = '0 1px 2px rgba(0,0,0,0.2)'
-            }}
-          >
-            Book Catering
-          </motion.button>
+          <a href="https://forms.gle/enNS5z1wQYpTPgap7" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', textDecoration: 'none', color: 'unset' }}>
+            <motion.button
+              variants={buttonVariants}
+              whileHover={{ scale: 1.05, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group w-full sm:w-auto px-10 py-5 rounded-full transition-all duration-300 border-2"
+              style={{
+                fontFamily: 'var(--font-baloo)',
+                fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
+                fontWeight: '700',
+                borderColor: '#FFFFFF',
+                color: '#FFFFFF',
+                backgroundColor: 'transparent',
+                textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#FFFFFF'
+                e.currentTarget.style.color = '#1A1A1A'
+                e.currentTarget.style.textShadow = 'none'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent'
+                e.currentTarget.style.color = '#FFFFFF'
+                e.currentTarget.style.textShadow = '0 1px 2px rgba(0,0,0,0.2)'
+              }}
+            >
+              Book Catering
+            </motion.button>
+          </a>
         </motion.div>
 
         {/* Trust Indicators */}
