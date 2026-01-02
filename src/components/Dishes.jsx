@@ -58,9 +58,9 @@ const dishCardVariants = {
 const dishes = [
   {
     id: 1,
-    name: "Ghee Roast Dosa",
+    name: "Chicken Dum Biryani",
     description: "Buttery, crispy perfection with aromatic ghee",
-    image: "/GR-Dosa.jpg",
+    image: "/chickenbiriyani.jpg",
     badge: "Signature"
   },
   {
@@ -86,16 +86,16 @@ const dishes = [
   },
   {
     id: 5,
-    name: "Paneer Dosa",
-    description: "Cottage cheese stuffed crispy crepe",
-    image: "/P-Dosa.png",
+    name: "Kothu Parotta",
+    description: "Chopped parotta stir-fried with vegetables, eggs, and spices",
+    image: "/CKottu.jpg",
     badge: "Chef's Pick"
   },
   {
     id: 6,
-    name: "Uttapam",
+    name: "Medu Vada",
     description: "Thick pancake with fresh toppings",
-    image: "/uttapam.png",
+    image: "/MeduVada.jpg",
     badge: "Favorite"
   }
 ]
