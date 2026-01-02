@@ -165,22 +165,24 @@ export default function HeroSection() {
             </motion.button>
           </a>
           
-          <motion.button
-            variants={buttonVariants}
-            whileHover="hover"
-            whileTap="tap"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              borderColor: '#febd01',
-              color: '#febd01',
-              borderWidth: '2px',
-              backgroundColor: 'transparent'
-            }}
-            className="w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:bg-[#febd01] hover:text-[#1A1A1A] focus:ring-2 focus:ring-offset-2"
-            aria-label="Book catering services"
-          >
-            Book Catering
-          </motion.button>
+          <a href="https://forms.gle/enNS5z1wQYpTPgap7" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
+              style={{
+                fontFamily: 'var(--font-heading)',
+                borderColor: '#febd01',
+                color: '#febd01',
+                borderWidth: '2px',
+                backgroundColor: 'transparent'
+              }}
+              className="w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:bg-[#febd01] hover:text-[#1A1A1A] focus:ring-2 focus:ring-offset-2"
+              aria-label="Book catering services"
+            >
+              Book Catering
+            </motion.button>
+          </a>
         </motion.div>
 
         {/* Stats Boxes */}
