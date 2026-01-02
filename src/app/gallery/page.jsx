@@ -29,7 +29,7 @@ export default function GalleryPage() {
     { src: "/P-Dosa.png", alt: "Paneer Dosa" },
     { src: "/uttapam.png", alt: "Uttapam" },
     { src: "/dosa.jpg", alt: "Traditional Dosa" },
-    { src: "/GR-Dosa.jpg", alt: "Restaurant Interior" },
+    { src: "/chickenbiriyani.jpg", alt: "Chicken Biriyani" },
   ];
 
   return (
