@@ -309,7 +309,7 @@ export default function DosaCirclePage() {
             {/* Join Button */}
             <div className="text-center">
               <a
-                href="#"
+                href="https://chat.whatsapp.com/B7WfLyh6OAuJtyMCMs1fIX"
                 className="inline-block bg-[#febd02] hover:bg-[#ffd700] text-[#1A1A1A] font-poppins font-semibold text-lg px-12 py-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Join Dosa Circle on WhatsApp
