@@ -59,14 +59,14 @@ const dishes = [
   {
     id: 1,
     name: "Chicken Dum Biryani",
-    description: "Buttery, crispy perfection with aromatic ghee",
+    description: "Aromatic basmati rice layered with tender chicken, caramelized onions, and rich spices, slow-cooked to perfection.",
     image: "/chickenbiriyani.jpg",
     badge: "Signature"
   },
   {
     id: 2,
     name: "Chettinad Curry",
-    description: "Spicy, aromatic South Indian curry",
+    description: "A fiery South Indian curry from Chettinad, bursting with aromatic spices and tender meat.",
     image: "/CC.jpg",
     badge: "Popular"
   },
@@ -88,17 +88,19 @@ const dishes = [
     id: 5,
     name: "Kothu Parotta",
     description: "Chopped parotta stir-fried with vegetables, eggs, and spices",
-    image: "/CKottu.jpg",
+    image: "/CK.jpg",
     badge: "Chef's Pick"
   },
   {
     id: 6,
     name: "Medu Vada",
-    description: "Thick pancake with fresh toppings",
-    image: "/MeduVada.jpg",
+    description: "Crispy golden-brown lentil donuts with a soft, fluffy interior.",
+    image: "/Medu_Vada.jpg",
     badge: "Favorite"
   }
 ]
+
+
 
 export default function Dishes() {
   return (
