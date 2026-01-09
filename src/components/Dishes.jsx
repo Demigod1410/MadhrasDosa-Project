@@ -66,7 +66,7 @@ const dishes = [
   {
     id: 2,
     name: "Chettinad Curry",
-    description: "A fiery South Indian curry from Chettinad, bursting with aromatic spices and tender meat.",
+    description: "A South Indian curry from Chettinad, bursting with aromatic spices and tender meat.",
     image: "/CC.jpg",
     badge: "Popular"
   },
