@@ -185,13 +185,15 @@ export default function BlogPage() {
                   </div>
 
                   {/* Read More Button */}
-                  <motion.button
-                    whileHover={{ x: 5 }}
-                    className="inline-flex items-center gap-2 text-[#febd01] font-baloo text-lg font-bold group-hover:gap-3 transition-all"
-                  >
-                    Read More
-                    <ArrowRight className="w-5 h-5" />
-                  </motion.button>
+                  <a href="https://madhrasdosa.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                    <motion.button
+                      whileHover={{ x: 5 }}
+                      className="inline-flex items-center gap-2 text-[#febd01] font-baloo text-lg font-bold group-hover:gap-3 transition-all"
+                    >
+                      Read More
+                      <ArrowRight className="w-5 h-5" />
+                    </motion.button>
+                  </a>
                 </div>
               </motion.article>
             ))}
