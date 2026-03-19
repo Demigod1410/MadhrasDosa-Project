@@ -221,7 +221,7 @@ export default function FAQ() {
           >
             Can't find what you're looking for?{' '}
             <a 
-              href="#contact" 
+              href="/contactus" 
               className="font-semibold transition-colors duration-300"
               style={{ color: '#febd01' }}
             >
