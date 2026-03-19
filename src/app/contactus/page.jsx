@@ -247,8 +247,8 @@ export default function ContactUsPage() {
                   Main Location
                 </h4>
                 <p className="font-poppins text-[#2D2D2D] text-lg font-semibold leading-relaxed">
-                  92 Hyndland Street,<br />
-                  Glasgow G11 5PT
+                  76 Old Dumbarton Rd,<br />
+                    Glasgow G3 8RE
                 </p>
                 <div className="mt-6 inline-flex items-center gap-2 text-[#1A1A1A] font-poppins font-semibold group-hover:gap-3 transition-all duration-300">
                   Branch 1
