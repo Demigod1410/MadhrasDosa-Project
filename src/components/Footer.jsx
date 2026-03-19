@@ -192,8 +192,8 @@ export default function Footer() {
                 >
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="font-poppins text-sm">
-                    92 Hyndland Street,<br />
-                    Glasgow G11 5PT
+                    76 Old Dumbarton Rd,<br />
+                    Glasgow G3 8RE
                   </span>
                 </a>
               </li>
