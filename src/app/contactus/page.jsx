@@ -251,7 +251,7 @@ export default function ContactUsPage() {
                   Glasgow G11 5PT
                 </p>
                 <div className="mt-6 inline-flex items-center gap-2 text-[#1A1A1A] font-poppins font-semibold group-hover:gap-3 transition-all duration-300">
-                  Get Directions
+                  Branch 1
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -259,8 +259,11 @@ export default function ContactUsPage() {
               </motion.a>
 
               {/* Location 2 */}
-              <motion.div
+              <motion.a
                 variants={fadeIn}
+                href="https://maps.app.goo.gl/CH8g9tcmKn71aopu9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-br from-[#FF4500] to-[#E94B3C] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
               >
                 <div className="mb-6">
@@ -275,10 +278,13 @@ export default function ContactUsPage() {
                   10 Clarendon Street,<br />
                   Glasgow G20 7QD
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-white font-poppins font-semibold opacity-60">
-                  Coming Soon
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-poppins font-semibold group-hover:gap-3 transition-all duration-300">
+                  Branch 2
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
-              </motion.div>
+              </motion.a>
             </motion.div>
           </motion.div>
 
