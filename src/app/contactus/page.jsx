@@ -212,21 +212,74 @@ export default function ContactUsPage() {
             viewport={{ once: true }}
             variants={fadeIn}
             transition={{ duration: 0.6 }}
-            className="bg-[#febd02] rounded-3xl p-12 shadow-xl mb-20"
+            className="mb-20"
           >
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="mb-6">
-                <div className="inline-block w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <MapPin className="w-8 h-8 text-[#1A1A1A]" />
-                </div>
-              </div>
-              <h3 className="font-baloo text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4">
+            <div className="text-center mb-12">
+              <h3 className="font-baloo text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">
                 Visit Us
               </h3>
-              <p className="font-poppins text-[#2D2D2D] text-lg md:text-xl leading-relaxed">
-                Experience our open kitchen and authentic South Indian flavours in person. We look forward to serving you.
+              <p className="font-poppins text-lg md:text-xl text-[#2D2D2D] max-w-2xl mx-auto leading-relaxed">
+                Experience our open kitchen and authentic South Indian flavours in person. We look forward to serving you at either of our locations.
               </p>
             </div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-2 gap-8"
+            >
+              {/* Location 1 */}
+              <motion.a
+                variants={fadeIn}
+                href="https://maps.app.goo.gl/Fws5pqnpRYC9xQ4d6?g_st=aw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-br from-[#febd02] to-[#ffd700] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+              >
+                <div className="mb-6">
+                  <div className="inline-block w-16 h-16 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/40 transition-all duration-300">
+                    <MapPin className="w-8 h-8 text-[#1A1A1A]" />
+                  </div>
+                </div>
+                <h4 className="font-baloo text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-3">
+                  Main Location
+                </h4>
+                <p className="font-poppins text-[#2D2D2D] text-lg font-semibold leading-relaxed">
+                  92 Hyndland Street,<br />
+                  Glasgow G11 5PT
+                </p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[#1A1A1A] font-poppins font-semibold group-hover:gap-3 transition-all duration-300">
+                  Get Directions
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
+
+              {/* Location 2 */}
+              <motion.div
+                variants={fadeIn}
+                className="bg-gradient-to-br from-[#FF4500] to-[#E94B3C] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+              >
+                <div className="mb-6">
+                  <div className="inline-block w-16 h-16 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/40 transition-all duration-300">
+                    <MapPin className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <h4 className="font-baloo text-2xl md:text-3xl font-bold text-white mb-3">
+                  Second Location
+                </h4>
+                <p className="font-poppins text-white text-lg font-semibold leading-relaxed">
+                  10 Clarendon Street,<br />
+                  Glasgow G20 7QD
+                </p>
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-poppins font-semibold opacity-60">
+                  Coming Soon
+                </div>
+              </motion.div>
+            </motion.div>
           </motion.div>
 
           {/* Social Media Section */}
