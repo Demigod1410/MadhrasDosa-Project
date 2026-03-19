@@ -296,6 +296,14 @@ export default function Footer() {
             <p className="font-poppins text-sm text-white/60 text-center md:text-left">
               © {new Date().getFullYear()} Madhras Dosa. All rights reserved.
             </p>
+            <a
+              href="https://www.nawom.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-poppins text-sm text-white/60 hover:text-[#febd01] transition-colors"
+            >
+              Developed by NAWOM
+            </a>
           </div>
         </div>
       </div>
