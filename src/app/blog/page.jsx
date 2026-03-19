@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
+import { Calendar, Clock, ArrowRight, BookOpen, ExternalLink } from "lucide-react";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -99,9 +99,20 @@ export default function BlogPage() {
             </h1>
           </div>
           
-          <p className="font-poppins text-xl md:text-2xl text-white leading-relaxed max-w-3xl mx-auto">
+          <p className="font-poppins text-xl md:text-2xl text-white leading-relaxed max-w-3xl mx-auto mb-8">
             Welcome to The Madhras Journal, where every story is seasoned with culture. From decoding the perfect chutney combo to exploring our sustainable kitchen, this is your inside look at everything Madhras Dosa.
           </p>
+
+          <a href="https://madhrasdosa.blogspot.com/" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-10 py-4 bg-gradient-to-r from-[#febd01] to-[#ffd700] text-[#1A1A1A] font-baloo text-lg font-bold rounded-full hover:shadow-[0_0_40px_rgba(254,189,1,0.6)] transition-all duration-300 inline-flex items-center gap-2 group"
+            >
+              Visit Our Full Blog
+              <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            </motion.button>
+          </a>
         </motion.div>
       </section>
 
@@ -215,7 +226,7 @@ export default function BlogPage() {
                   Order Online
                 </motion.button>
               </a>
-              
+
               <a href="https://maps.app.goo.gl/Fws5pqnpRYC9xQ4d6?g_st=aw" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
