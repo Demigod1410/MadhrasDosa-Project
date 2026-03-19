@@ -192,8 +192,22 @@ export default function Footer() {
                 >
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="font-poppins text-sm">
-                    76 Old Dumbarton Road,<br />
-                    Glasgow G3 8RE
+                    92 Hyndland Street,<br />
+                    Glasgow G11 5PT
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.google.com/?q=10+Clarendon+Street,+Glasgow+G20+7QD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-white/80 hover:text-[#febd01] transition-colors duration-300 group"
+                >
+                  <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                  <span className="font-poppins text-sm">
+                    10 Clarendon Street,<br />
+                    Glasgow G20 7QD
                   </span>
                 </a>
               </li>
