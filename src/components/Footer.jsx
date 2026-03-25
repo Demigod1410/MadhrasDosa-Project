@@ -300,7 +300,7 @@ export default function Footer() {
               href="https://www.nawom.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-poppins text-sm text-white/60 hover:text-[#febd01] transition-colors"
+              className="font-poppins text-sm text-[#febd01] hover:text-[#ffd700] transition-colors"
             >
               Developed by NAWOM
             </a>
